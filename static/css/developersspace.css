@@ -9,7 +9,7 @@
 }
 #main {
 	width:98%;
-	min-height:650px`;
+	min-height:650px;
 	margin:auto;
 	padding:10px;
 	border:5px solid white;
@@ -18,7 +18,7 @@
 .tt{
 	font-size:135px;
 	font-family:Lucida Bright;
-	color:white;
+	color: white;
 }
 .tab {
   overflow: hidden;
