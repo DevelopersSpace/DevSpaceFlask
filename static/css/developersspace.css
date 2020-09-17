@@ -9,10 +9,11 @@
 }
 #main {
 	width:98%;
-	min-height:650px;
+	min-height:650px`;
 	margin:auto;
 	padding:10px;
-    font-family:Lucida Bright;
+	border:5px solid white;
+		font-family:Lucida Bright;
 }
 .tt{
 	font-size:135px;
@@ -23,7 +24,7 @@
   overflow: hidden;
   border: 5px solid white;
   background-color: #424242;
-  color: #ffffff;
+  color:red;
 }
 h1,h2
 	{
@@ -56,11 +57,34 @@ h1,h2
     color:black;
 }
 
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 5px solid red;
+ -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  color:#00fff7;
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 p::selection
 {
 	color:red;
 	background-color : yellow ;
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -68,7 +92,9 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #424242;
-  width:90%;
+  width:100%;
+  border-right:5px solid white;
+  border-left:5px solid white
 }
 
 /* Style the topnav links */
@@ -79,9 +105,6 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border-left:5px solid white;
-  border-right: 5px solid white;
-
 }
 
 /* Change color on hover */
@@ -98,12 +121,12 @@ body {
 
 /* Left and right column */
 .column.side {
-  width: 10%;
+  width: 15%;
 }
 
 /* Middle column */
 .column.middle {
-  width: 80%;
+  width: 85%;
 }
 
 /* Clear floats after the columns */
@@ -112,15 +135,9 @@ body {
   display: table;
   clear: both;
 }
-@media screen and (max-width: 600px){
-    .tt{
-        font-size: 24px;
-    }
 
-}
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-
   .column.side, .column.middle {
     width: 100%;
   }

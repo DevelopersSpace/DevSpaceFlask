@@ -1,30 +1,90 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
 		<link rel="stylesheet" href="{{ url_for ('static', filename='css/developersspace.css') }}">
 		<title>Developers Space</title>
 	</head>
     <body style = "margin:5px;background-color:#424242;">
-	    <div id="main">
-    <div id="title">
+<div id="main">
+	<div id="title">
 		<img src="{{url_for('static', filename='images/developersspace.jpg') }}" height = "150px" style="float:right;margin:5px;border: 3px solid white;" />
 		<div class="tt">Developers Space</div>
 	</div>
-    <div class="topnav">
-  <a href="{{ url_for('home') }}">Home</a>
+	<div class="topnav">
+  <a href="index.html">Home</a>
   <a href="#">Projects</a>
   <a href="#">About us</a>
 	</div>
 	<!-- Tab links -->
 	<div class="tab">
-		<a href="{{ url_for('ardpg') }}"><button class="tablinks">Arduino</button></a>
-		<button class="tablinks">Raspberry Pi</button>
-		<button class="tablinks">NodeMCU</button>
-		<button class="tablinks">Basic Electronics</button>
-		<button class="tablinks">Testing Components</button>
-    </div>
-        {% block body %}
+		<button class="tablinks" onclick="openInfo(event, 'Arduino')" >Arduino</button>
+		<button class="tablinks" onclick="openInfo(event, 'Raspberry Pi')">Raspberry Pi</button>
+		<button class="tablinks" onclick="openInfo(event, 'NodeMCU')">NodeMCU</button>
+		<button class="tablinks" onclick="openInfo(event, 'Basic Parts')">Basic Electronics</button>
+		<button class="tablinks" onclick="openInfo(event, 'Testing Components')">Testing Components</button>
+	</div>
+
+<!-- Tab content -->
+<div id="Arduino" class="tabcontent">
+  <h2>Arduino</h2>
+  <img src="Arduino_Logo.jpg" height = "200px"/>
+		<a href="{{ url_for('ardpg') }}"><button class="tablinks" href="{{ url_for('ardpg') }}">Arduino</button></a>
+</div>
+
+<div id="Raspberry Pi" class="tabcontent">
+  <h2>Raspberry Pi</h2>
+  <p>Raspberry Pi is a small pc.</p>
+</div>
+
+<div id="NodeMCU" class="tabcontent">
+  <h2>NodeMCU</h2>
+  <p>NodeMCU is wifi based dev board.</p>
+</div>
+<script>
+function openInfo(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<!-- Tab links -->
+
+<!-- Tab content -->
+<div id="Basic Parts" class="tabcontent">
+  <h3>Basic electronics</h3>
+  <p>Basic electronics.</p>
+</div>
+
+<div id="Testing Components" class="tabcontent">
+  <h3>Testing Components</h3>
+  <p>Testing Components.</p>
+</div>
+<script>
+function openInfo(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+{% block body %}
         {% endblock %}
-    </div>
-  </body>
+	</div>
+	</body>
 </html>
