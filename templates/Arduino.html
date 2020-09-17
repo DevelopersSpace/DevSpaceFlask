@@ -1,0 +1,26 @@
+{% extends "Layout.html" %}
+{% block body %}
+    <div class="column side">
+        <div class="content">
+            <h2>Contents</h2>
+            <ul>
+                <li>Getting started
+                <li>Knowing the Arduino IDE
+                </ul>
+        </div>
+  </div>
+  <div class="column middle">
+  <h1>Arduino</h1>
+    <img src="{{url_for('static', filename='images/Arduino_Logo.jpg') }}" height = "200px"/>
+      <div class="content">
+      <p>Arduino is an open-source electronics platform based on easy-to-use hardware and software.
+  Arduino consists of both a physical programmable circuit board (often referred to as a microcontroller) and a software 
+  or IDE(Integrated Development Environment) that is used to write and upload computer code to the Arduino board.
+  Arduino has a large family of boards made according to their proccessing capacity, number of I/O pins, size required, etc...
+<h1>Getting Started</h1>
+<h3>Downloading the IDE</h3>
+  <p>You can find the software in the link below to the original Arduino Website:</p>
+  <a href = "https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a>
+    </div>
+  </div>
+{% endblock %}

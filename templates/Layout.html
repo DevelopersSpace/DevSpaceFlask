@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="{{ url_for ('static', filename='css/developersspace.css') }}">
+		<title>Developers Space</title>
+	</head>
+    <body style = "margin:5px;background-color:#424242;">
+	    <div id="main">
+    <div id="title">
+		<img src="{{url_for('static', filename='images/developersspace.jpg') }}" height = "150px" style="float:right;margin:5px;border: 3px solid white;" />
+		<div class="tt">Developers Space</div>
+	</div>
+    <div class="topnav">
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="#">Projects</a>
+  <a href="#">About us</a>
+	</div>
+	<!-- Tab links -->
+	<div class="tab">
+		<a href="{{ url_for('ardpg') }}"><button class="tablinks">Arduino</button></a>
+		<button class="tablinks">Raspberry Pi</button>
+		<button class="tablinks">NodeMCU</button>
+		<button class="tablinks">Basic Electronics</button>
+		<button class="tablinks">Testing Components</button>
+    </div>
+        {% block body %}
+        {% endblock %}
+    </div>
+  </body>
+</html>
