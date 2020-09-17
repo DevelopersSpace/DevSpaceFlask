@@ -18,13 +18,12 @@
 .tt{
 	font-size:135px;
 	font-family:Lucida Bright;
-	color: white;
 }
 .tab {
   overflow: hidden;
   border: 5px solid white;
   background-color: #424242;
-  color:red;
+  color:white;
 }
 h1,h2
 	{
