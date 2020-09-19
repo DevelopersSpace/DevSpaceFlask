@@ -2,7 +2,7 @@
 <html>
     <head>
 		<link rel="stylesheet" href="{{ url_for ('static', filename='css/developersspace.css') }}">
-		<title>Developers Space</title>
+		<title>{{title}}</title>
         <script>
 function openInfo(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -44,7 +44,7 @@ function openInfo(evt, cityName) {
   <h2>Arduino</h2>
   <img src="{{url_for('static', filename='images/Arduino_Logo.jpg') }}" height = "200px"/>
   <div>
-    <button class="tablinks"><a href="{{ url_for('ardpg') }}">Begin with Arduino</a></button>
+    <button class="tablinks"><a href="{{ url_for('ardpg') }}" >Begin with Arduino</a></button>
   </div>
   </div>
 
