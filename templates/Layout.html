@@ -3,46 +3,7 @@
     <head>
 		<link rel="stylesheet" href="{{ url_for ('static', filename='css/developersspace.css') }}">
 		<title>Developers Space</title>
-	</head>
-    <body style = "margin:5px;background-color:#424242;">
-<div id="main">
-	<div id="title">
-		<img src="{{url_for('static', filename='images/developersspace.jpg') }}" height = "150px" style="float:right;margin:5px;border: 3px solid white;" />
-		<div style="color: white;" class="tt">Developers Space</div>
-	</div>
-	<div class="topnav">
-  <a href="{{ url_for('home') }}">Home</a>
-  <a href="#">Projects</a>
-  <a href="#">About us</a>
-	</div>
-	<!-- Tab links -->
-	<div class="tab">
-		<button class="tablinks" onclick="openInfo(event, 'Arduino')" >Arduino</button>
-		<button class="tablinks" onclick="openInfo(event, 'Raspberry Pi')">Raspberry Pi</button>
-		<button class="tablinks" onclick="openInfo(event, 'NodeMCU')">NodeMCU</button>
-		<button class="tablinks" onclick="openInfo(event, 'Basic Parts')">Basic Electronics</button>
-		<button class="tablinks" onclick="openInfo(event, 'Testing Components')">Testing Components</button>
-	</div>
-
-<!-- Tab content -->
-<div id="Arduino" class="tabcontent">
-  <h2>Arduino</h2>
-  <img src="{{url_for('static', filename='images/Arduino_Logo.jpg') }}" height = "200px"/>
-  <div>
-    <button class="tablinks"><a href="{{ url_for('ardpg') }}">Begin with Arduino</a></button>
-  </div>
-  </div>
-
-<div id="Raspberry Pi" class="tabcontent">
-  <h2>Raspberry Pi</h2>
-  <p>Raspberry Pi is a small pc.</p>
-</div>
-
-<div id="NodeMCU" class="tabcontent">
-  <h2>NodeMCU</h2>
-  <p>NodeMCU is wifi based dev board.</p>
-</div>
-<script>
+        <script>
 function openInfo(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -57,17 +18,54 @@ function openInfo(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 </script>
-<!-- Tab links -->
+    </head>
+    <body style = "margin:5px;background-color:#424242;">
+<div id="main">
+	<div id="title">
+		<img src="{{url_for('static', filename='images/developersspace.jpg') }}" height = "150px" style="float:right;margin:5px;border: 3px solid white;" />
+		<div style="color: white;" class="tt">Developers Space</div>
+	</div>
+	<div class="topnav">
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="#">Projects</a>
+  <a href="#">About us</a>
+	</div>
+	<!-- Tab links -->
+	<div class="tab">
+		<button class="tablinks" onclick="openInfo(event, 'Arduino')" >Arduino</button>
+        <button class="tablinks" onclick="openInfo(event, 'NodeMCU')">NodeMCU</button>
+		<button class="tablinks" onclick="openInfo(event, 'Flask')">Flask</button>
+		<button class="tablinks" onclick="openInfo(event, 'C/C++ for Arduino')">C/C++ for Arduino</button>
+		<button class="tablinks" onclick="openInfo(event, 'HTML/CSS')">HTML/CSS</button>
+	</div>
 
 <!-- Tab content -->
-<div id="Basic Parts" class="tabcontent">
-  <h3>Basic electronics</h3>
-  <p>Basic electronics.</p>
+<div id="Arduino" class="tabcontent">
+  <h2>Arduino</h2>
+  <img src="{{url_for('static', filename='images/Arduino_Logo.jpg') }}" height = "200px"/>
+  <div>
+    <button class="tablinks"><a href="{{ url_for('ardpg') }}">Begin with Arduino</a></button>
+  </div>
+  </div>
+
+<div id="Flask" class="tabcontent">
+  <h2>Flask</h2>
+  <p>Flask</p>
 </div>
 
-<div id="Testing Components" class="tabcontent">
-  <h3>Testing Components</h3>
-  <p>Testing Components.</p>
+<div id="NodeMCU" class="tabcontent">
+  <h2>NodeMCU</h2>
+  <p>NodeMCU is wifi based dev board.</p>
+</div>
+
+<div id="C/C++ for Arduino" class="tabcontent">
+  <h2>C/C++ for Arduino</h2>
+  <p>C/C++ for Arduino</p>
+</div>
+
+<div id="HTML/CSS" class="tabcontent">
+  <h2>HTML/CSS</h2>
+  <p>HTML/CSS</p>
 </div>
 <script>
 function openInfo(evt, cityName) {
