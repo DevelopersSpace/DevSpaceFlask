@@ -28,8 +28,10 @@
 <div id="Arduino" class="tabcontent">
   <h2>Arduino</h2>
   <img src="{{url_for('static', filename='images/Arduino_Logo.jpg') }}" height = "200px"/>
-		<a href="{{ url_for('ardpg') }}"><button class="tablinks" href="{{ url_for('ardpg') }}">Arduino</button></a>
-</div>
+  <div>
+    <button class="tablinks"><a href="{{ url_for('ardpg') }}">Begin with Arduino</a></button>
+  </div>
+  </div>
 
 <div id="Raspberry Pi" class="tabcontent">
   <h2>Raspberry Pi</h2>
@@ -84,6 +86,6 @@ function openInfo(evt, cityName) {
 </script>
 {% block body %}
 {% endblock %}
-	</div>
+    </div>
 	</body>
 </html>

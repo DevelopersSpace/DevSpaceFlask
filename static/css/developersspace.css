@@ -1,6 +1,7 @@
 .content{
 	color:#00fff7;
 	font-family:Lucida Bright;
+
 }
 #title{
 	background-color:#424242;
@@ -12,8 +13,7 @@
 	min-height:650px;
 	margin:auto;
 	padding:10px;
-	border:5px solid white;
-		font-family:Lucida Bright;
+    font-family:Lucida Bright;
 }
 .tt{
 	font-size:135px;
@@ -40,7 +40,7 @@ h1,h2
   transition: 0.3s;
   color:#00fff7;
   font-size:17px;
-  font-style:bold;
+  font-style: bold;
   font-family:Lucida Bright;
 }
 
