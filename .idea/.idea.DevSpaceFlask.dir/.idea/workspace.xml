@@ -16,7 +16,14 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fad63cd6-54ef-4ff6-9d46-3a75ea224471" name="Default Changelist" comment="" />
@@ -27,6 +34,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/css/developersspace.css" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1hfvpTt0T9GCDfsqOfDg48vRjTs" />
   <component name="ProjectViewState">
@@ -60,7 +74,7 @@
       <workItem from="1600415150002" duration="48000" />
       <workItem from="1618547834655" duration="217000" />
       <workItem from="1618548280876" duration="219000" />
-      <workItem from="1623902283450" duration="103000" />
+      <workItem from="1623902283450" duration="429000" />
     </task>
     <servers />
   </component>
@@ -74,7 +88,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
