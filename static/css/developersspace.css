@@ -6,7 +6,7 @@
 #title{
 	background-color:#424242;
 	border:5px solid white;
-		font-family:Lucida Bright;
+    font-family:Lucida Bright;
 }
 #main {
 	width:98%;
@@ -16,7 +16,7 @@
     font-family:Lucida Bright;
 }
 .tt{
-	font-size:135px;
+	font-size:100px;
 	font-family:Lucida Bright;
 }
 .tab {
