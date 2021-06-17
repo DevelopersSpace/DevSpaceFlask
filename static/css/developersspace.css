@@ -6,7 +6,9 @@
 #title{
 	background-color:#424242;
 	border:5px solid white;
-    font-family:Lucida Bright;
+		font-family:Lucida Bright;
+	font-size:100px;
+
 }
 #main {
 	width:98%;
